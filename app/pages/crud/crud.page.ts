@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { StorageService, Item } from '../../services/storage.service';
+import { Platform, ToastController, IonList } from '@ionic/angular';
 
 @Component({
   selector: 'app-crud',
@@ -11,7 +13,7 @@ export class CrudPage implements OnInit {
 
 	newItem: Item = <Item>{};
 
-	@ViewChild('mylist')mylist: List;
+	@ViewChild('mylist')mylist: IonList;
   constructor(private storageService: StorageService, private plt: Platform, private toastController: ToastController) { 
   	this.plt.ready().then(() => {
   		this.loadItems();
