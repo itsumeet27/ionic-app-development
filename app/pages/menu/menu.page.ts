@@ -42,8 +42,32 @@ export class MenuPage implements OnInit {
           url: '/menu/ecommerce-development',
           icon: 'cart'
         },
-      ],
-      icon: 'speedometer',
+      ]
+    },
+    {
+      title: 'Portfolio',
+      children: [
+        {
+          title: 'Khadi Premium Cosmetics',
+          url: '/menu/khadi-premium-cosmetics',
+          icon: 'gift'
+        },
+        {
+          title: 'NetMate Solutions',
+          url: '/menu/netmatesolutions',
+          icon: 'desktop'
+        },
+        {
+          title: 'Amit Traders',
+          url: '/menu/amittraders',
+          icon: 'briefcase'
+        },
+        {
+          title: 'FashionST',
+          url: '/menu/fashionst',
+          icon: 'basket'
+        },
+      ]
     },
   	{
   		title: 'Contact',

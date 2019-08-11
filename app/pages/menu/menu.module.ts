@@ -18,6 +18,10 @@ const routes: Routes = [
       { path: 'web-development', loadChildren: '../../services/web-development/web-development.module#WebDevelopmentPageModule' },
       { path: 'responsive-web-development', loadChildren: '../../services/responsive-web-development/responsive-web-development.module#ResponsiveWebDevelopmentPageModule' },
       { path: 'ecommerce-development', loadChildren: '../../services/ecommerce-development/ecommerce-development.module#EcommerceDevelopmentPageModule' },
+      { path: 'fashionst', loadChildren: '../../portfolio/fashionst/fashionst.module#FashionstPageModule' },
+      { path: 'amittraders', loadChildren: '../../portfolio/amittraders/amittraders.module#AmittradersPageModule' },
+      { path: 'netmatesolutions', loadChildren: '../../portfolio/netmatesolutions/netmatesolutions.module#NetmatesolutionsPageModule' },
+      { path: 'khadi-premium-cosmetics', loadChildren: '../../portfolio/khadi-premium-cosmetics/khadi-premium-cosmetics.module#KhadiPremiumCosmeticsPageModule' },
       { path: 'contact', loadChildren: '../contact/contact.module#ContactPageModule' }
     ]
   },
