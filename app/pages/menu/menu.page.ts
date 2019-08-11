@@ -11,15 +11,44 @@ export class MenuPage implements OnInit {
   pages = [
   	{
   		title: 'Home',
-  		url: '/menu/home'
+  		url: '/menu/home',
+      icon: 'home'
   	},
   	{
   		title: 'About',
-  		url: '/menu/about'
+  		url: '/menu/about',
+      icon: 'information-circle'
   	},
+    {
+      title: 'Services',
+      children: [
+        {
+          title: 'WordPress Development',
+          url: '/menu/wordpress-development',
+          icon: 'logo-wordpress'
+        },
+        {
+          title: 'Web Development',
+          url: '/menu/web-development',
+          icon: 'globe'
+        },
+        {
+          title: 'Responsive Web Development',
+          url: '/menu/responsive-web-development',
+          icon: 'phone-portrait'
+        },
+        {
+          title: 'E-Commerce Development',
+          url: '/menu/ecommerce-development',
+          icon: 'cart'
+        },
+      ],
+      icon: 'speedometer',
+    },
   	{
   		title: 'Contact',
-  		url: '/menu/contact'
+  		url: '/menu/contact',
+      icon: 'person'
   	}
   ];
 

@@ -14,6 +14,10 @@ const routes: Routes = [
     children: [
       { path: 'home', loadChildren: '../../home/home.module#HomePageModule' },
       { path: 'about', loadChildren: '../about/about.module#AboutPageModule' },
+      { path: 'wordpress-development', loadChildren: '../../services/wordpress-development/wordpress-development.module#WordpressDevelopmentPageModule' },
+      { path: 'web-development', loadChildren: '../../services/web-development/web-development.module#WebDevelopmentPageModule' },
+      { path: 'responsive-web-development', loadChildren: '../../services/responsive-web-development/responsive-web-development.module#ResponsiveWebDevelopmentPageModule' },
+      { path: 'ecommerce-development', loadChildren: '../../services/ecommerce-development/ecommerce-development.module#EcommerceDevelopmentPageModule' },
       { path: 'contact', loadChildren: '../contact/contact.module#ContactPageModule' }
     ]
   },
