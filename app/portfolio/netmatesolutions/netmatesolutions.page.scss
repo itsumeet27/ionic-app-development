@@ -1,0 +1,70 @@
+.content ul{
+	text-align:justify;
+	padding: 1.25em;
+	line-height: 1.5em;
+    -webkit-animation: fadeinleft 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadeinleft 2s; /* Firefox < 16 */
+        -ms-animation: fadeinleft 2s; /* Internet Explorer */
+         -o-animation: fadeinleft 2s; /* Opera < 12.1 */
+            animation: fadeinleft 2s;
+            animation-direction: left;
+}
+
+@keyframes fadeinleft {
+    from { 
+        opacity: 0; 
+        transform: translateX(-20px);
+    }
+    to   { 
+        opacity: 1; 
+        transform: translateX(0px);
+    }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeinleft {
+    from { 
+        opacity: 0; 
+        transform: translateX(-20px);
+    }
+    to   { 
+        opacity: 1; 
+        transform: translateX(0px);
+    }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeinleft {
+    from { 
+        opacity: 0; 
+        transform: translateX(-20px);
+    }
+    to   { 
+        opacity: 1; 
+        transform: translateX(0px);
+    }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeinleft {
+    from { 
+        opacity: 0; 
+        transform: translateX(-20px);
+    }
+    to   { 
+        opacity: 1; 
+        transform: translateX(0px);
+    }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeinleft {
+    from { 
+        opacity: 0; 
+        transform: translateX(-20px);
+    }
+    to   { 
+        opacity: 1; 
+        transform: translateX(0px);
+    }
+}
