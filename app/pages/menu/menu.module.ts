@@ -25,7 +25,7 @@ const routes: Routes = [
       { path: 'contact', loadChildren: '../contact/contact.module#ContactPageModule' }
     ]
   },
-  { path: '', redirectTo: '/menu/home' }
+  { path: '', redirectTo: 'login' }
 ];
 
 @NgModule({
